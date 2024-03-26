@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-style: normal;
+}
+
 *,
 ::after,
 ::before {
@@ -33,4 +39,5 @@ html {
 
 body {
   display: flex;
+  font-family: "HelveticaNeue", "sans-serif", "Courier New";
 }
