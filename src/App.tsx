@@ -1,17 +1,19 @@
-import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MapSection from "./components/MapSection";
+import BenefitsSection from "./components/BenefitsSection";
+import BottomHero from "./components/BottomHero";
+import EmailSubmitionSection from "./components/EmailSubmitionSection";
 
 function App() {
-  const { t, i18n } = useTranslation();
-
   return (
     <div className="w-full">
       <Header />
       <Hero />
       <MapSection />
+      <BenefitsSection />
+      <BottomHero />
+      <EmailSubmitionSection />
     </div>
   );
 }

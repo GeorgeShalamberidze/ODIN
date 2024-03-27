@@ -16,7 +16,7 @@ const MapSection = () => {
           <img
             src="./src/assets/png/iphoneX.png"
             alt="Iphone X"
-            className="absolute top-11 -right-24 w-[279px] z-50"
+            className="absolute top-11 -right-24 w-[279px] z-20"
           />
         </div>
         <div className="flex flex-col justify-center flex-1 pl-44 gap-8">
