@@ -13,7 +13,7 @@ const headerItems = [
 const Header = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50">
+    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50 shadow-md">
       <img
         src={OdinLogo}
         alt="company logo"
