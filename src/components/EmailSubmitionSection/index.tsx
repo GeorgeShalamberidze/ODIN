@@ -4,6 +4,7 @@ import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
 import { validate } from "@/helpers/validateEmail";
 import { AiOutlineLoading } from "react-icons/ai";
 import "./style.css";
+import { toast } from "react-toastify";
 
 const EmailSubmitionSection = () => {
   return (
@@ -26,14 +27,17 @@ const EmailSubmitionSection = () => {
             initialValues={{ email: "" }}
             onSubmit={(
               { email },
-              { setSubmitting, setFieldValue, setErrors, setTouched }
+              { setSubmitting, setFieldValue, setTouched }
             ) => {
               postEmail(email as unknown as EmailPropType)
                 .then(() => {
                   setFieldValue("email", "");
                   setTouched({ email: false });
                 })
-                .finally(() => setSubmitting(false));
+                .finally(() => {
+                  setSubmitting(false);
+                  toast.success("Email submitted successfully !");
+                });
             }}
           >
             {({ isSubmitting, errors }) => (
