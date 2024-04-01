@@ -1,4 +1,10 @@
 import React from "react";
+import postEmail, { EmailPropType } from "@/services/postEmail";
+import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
+import { validate } from "@/helpers/validateEmail";
+import { AiOutlineLoading } from "react-icons/ai";
+import "./style.css";
+import { toast } from "react-toastify";
 
 const EmailSubmitionSection = () => {
   return (
@@ -16,17 +22,61 @@ const EmailSubmitionSection = () => {
               travellers.
             </p>
           </div>
-
-          <div className="flex mt-9 gap-4">
-            <input
-              placeholder="Enter Email"
-              type="email"
-              className="h-[72px] w-full rounded-xl pl-4 outline-none text-base"
-            />
-            <button className="h-[72px] w-[190px] bg-[#242424] rounded-xl">
-              <p className="text-2xl text-white">Submit</p>
-            </button>
-          </div>
+          <Formik
+            validate={validate}
+            initialValues={{ email: "" }}
+            onSubmit={(
+              { email },
+              { setSubmitting, setFieldValue, setTouched }
+            ) => {
+              postEmail(email as unknown as EmailPropType)
+                .then(() => {
+                  setFieldValue("email", "");
+                  setTouched({ email: false });
+                })
+                .finally(() => {
+                  setSubmitting(false);
+                  toast.success("Email submitted successfully !");
+                });
+            }}
+          >
+            {({ isSubmitting, errors }) => (
+              <>
+                <Form className="flex mt-9 gap-4">
+                  <Field
+                    type="email"
+                    placeholder="Enter Email"
+                    name="email"
+                    className="h-[72px] w-full rounded-xl pl-4 outline-none text-base"
+                  />
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="h-[72px] w-[190px] bg-[#242424] rounded-xl relative"
+                  >
+                    {isSubmitting ? (
+                      <AiOutlineLoading
+                        size={35}
+                        className="spinner absolute top-5 left-12"
+                        fill="white"
+                      />
+                    ) : (
+                      <p className="text-2xl text-white">Submit</p>
+                    )}
+                  </button>
+                </Form>
+                {errors.email ? (
+                  <ErrorMessage
+                    name="email"
+                    component="div"
+                    className="text-red-500 mt-2 text-2xl"
+                  />
+                ) : (
+                  <div className="h-10 w-full"></div>
+                )}
+              </>
+            )}
+          </Formik>
         </div>
 
         <div>

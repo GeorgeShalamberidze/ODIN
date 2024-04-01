@@ -4,6 +4,7 @@ import MapSection from "./components/MapSection";
 import BenefitsSection from "./components/BenefitsSection";
 import BottomHero from "./components/BottomHero";
 import EmailSubmitionSection from "./components/EmailSubmitionSection";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
