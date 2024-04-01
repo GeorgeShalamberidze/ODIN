@@ -13,7 +13,7 @@ use(initReactI18next)
         translation: en,
       },
     },
-    lng: "ka",
+    lng: "en",
     fallbackLng: "en",
     interpolation: {
       escapeValue: false,

@@ -12,9 +12,9 @@ function App() {
       <Header />
       <Hero />
       <MapSection />
-      <BenefitsSection />
+      {/* <BenefitsSection />
       <BottomHero />
-      <EmailSubmitionSection />
+      <EmailSubmitionSection /> */}
     </div>
   );
 }

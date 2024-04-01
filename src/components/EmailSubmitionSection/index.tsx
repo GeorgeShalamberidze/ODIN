@@ -3,8 +3,8 @@ import postEmail, { EmailPropType } from "@/services/postEmail";
 import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
 import { validate } from "@/helpers/validateEmail";
 import { AiOutlineLoading } from "react-icons/ai";
-import "./style.css";
 import { toast } from "react-toastify";
+import "./style.css";
 
 const EmailSubmitionSection = () => {
   return (
