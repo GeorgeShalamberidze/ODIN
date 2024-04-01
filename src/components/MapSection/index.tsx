@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import StoreButtons from "../StoreButtons";
 
 const MapSection = () => {
   const { t } = useTranslation();
@@ -20,7 +19,7 @@ const MapSection = () => {
           />
         </div>
         <div className="flex flex-col justify-center flex-1 gap-8 p-8 xl:pl-36 text-center lg:text-start">
-          <p className="text-[40px] text-black tracking-[-1px] leading-10  ">
+          <p className="text-2xl text-[#262C40] tracking-[-1px] font-bold">
             {t("mapSectionMainText")}
           </p>
           <p className="text-base">{t("mapSectionSecondaryText")}</p>

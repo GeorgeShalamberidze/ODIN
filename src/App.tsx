@@ -5,6 +5,7 @@ import BenefitsSection from "./components/BenefitsSection";
 import BottomHero from "./components/BottomHero";
 import EmailSubmitionSection from "./components/EmailSubmitionSection";
 import "react-toastify/dist/ReactToastify.css";
+import HowOdinWorks from "./components/HowOdinWorks";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Hero />
       <MapSection />
+      <HowOdinWorks />
       {/* <BenefitsSection />
       <BottomHero />
       <EmailSubmitionSection /> */}

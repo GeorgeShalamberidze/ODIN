@@ -17,7 +17,7 @@ const SideMenuContent = ({ items, hideModal }: SideMenuContentPropType) => {
           key={item.id}
           onClick={() => hideModal()}
         >
-          <div className="flex gap-3 items-center text-center text-white p-1">
+          <div className="flex gap-3 items-center text-center text-white p-3">
             {<item.icon size={25} />}
             <p>{t(item.name)}</p>
           </div>
