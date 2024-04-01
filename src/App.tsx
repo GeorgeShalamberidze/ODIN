@@ -1,8 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MapSection from "./components/MapSection";
-import BenefitsSection from "./components/BenefitsSection";
-import BottomHero from "./components/BottomHero";
+import KeyFeaturesSection from "./components/BenefitsSection";
 import EmailSubmitionSection from "./components/EmailSubmitionSection";
 import "react-toastify/dist/ReactToastify.css";
 import HowOdinWorks from "./components/HowOdinWorks";
@@ -14,9 +13,8 @@ function App() {
       <Hero />
       <MapSection />
       <HowOdinWorks />
-      {/* <BenefitsSection />
-      <BottomHero />
-      <EmailSubmitionSection /> */}
+      <KeyFeaturesSection />
+      <EmailSubmitionSection />
     </div>
   );
 }

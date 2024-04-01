@@ -6,9 +6,9 @@ const HowOdinWorks = () => {
   const [clientPicked, setCliendPicked] = useState<string>("sender");
 
   return (
-    <div>
+    <div className="mb-24">
       <div className="flex items-center justify-center text-center mb-12">
-        <h1 className="text-5xl text-[#212121]">How Odin works</h1>
+        <h1 className="text-4xl md:text-5xl text-[#212121]">How Odin works</h1>
       </div>
 
       <div className="flex items-center justify-center h-28 w-full mb-6">
@@ -44,7 +44,7 @@ const HowOdinWorks = () => {
         </div>
       </div>
 
-      <div className="mx-8 md:mx-14 lg:mx-28">
+      <div className="mx-4 md:mx-14 lg:mx-28">
         {clientPicked === "sender" ? (
           <HowOdinWorksContent isSender={true} content={senderItems} />
         ) : (

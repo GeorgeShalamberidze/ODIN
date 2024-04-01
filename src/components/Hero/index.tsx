@@ -5,13 +5,13 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="flex flex-col gap-2 mx-8 md:mx-14 lg:mx-28 py-10 md:py-[70px] text-center md:text-start">
+      <div className="flex flex-col gap-2 mx-4 md:mx-14 lg:mx-28 py-10 md:py-[70px] text-center md:text-start">
         <div className="flex justify-center md:justify-between gap-6 mt-4 w-full ">
           <div className="flex flex-col gap-4 max-w-[600px] w-full md:pr-6">
-            <h1 className="text-5xl text-[#262C40] font-bold">
+            <h1 className="text-3xl md:text-5xl text-[#262C40] font-bold">
               {t("heroMainText")}
             </h1>
-            <p className="text-base">{t("heroSecondaryText")}</p>
+            <p className="text-sm md:text-base">{t("heroSecondaryText")}</p>
           </div>
           <div className="h-fit w-full hidden justify-end md:flex">
             <div className="relative w-fit">
