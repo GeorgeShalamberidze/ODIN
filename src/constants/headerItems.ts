@@ -5,8 +5,8 @@ import { MdConnectingAirports } from "react-icons/md";
 import { MdContactPage } from "react-icons/md";
 
 export const headerItems: HeaderItem[] = [
-  { id: 0, name: "about", icon: FaCircleInfo },
-  { id: 1, name: "features", icon: MdAppSettingsAlt },
-  { id: 2, name: "ourApproach", icon: MdConnectingAirports },
+  { id: 0, name: "howOdinWorks", icon: FaCircleInfo },
+  { id: 1, name: "keyFeatures", icon: MdAppSettingsAlt },
+  { id: 2, name: "trustAndSecurity", icon: MdConnectingAirports },
   { id: 3, name: "contacts", icon: MdContactPage },
 ];

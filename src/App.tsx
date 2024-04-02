@@ -3,9 +3,10 @@ import Hero from "./components/Hero";
 import MapSection from "./components/MapSection";
 import KeyFeaturesSection from "./components/BenefitsSection";
 import EmailSubmitionSection from "./components/EmailSubmitionSection";
-import "react-toastify/dist/ReactToastify.css";
 import HowOdinWorks from "./components/HowOdinWorks";
 import SecuritySection from "./components/SecuritySection";
+import Footer from "./components/Footer";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <KeyFeaturesSection />
       <SecuritySection />
       <EmailSubmitionSection />
+      <Footer />
     </div>
   );
 }

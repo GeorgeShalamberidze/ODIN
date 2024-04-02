@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import LanguageSwitcher from "../languageSwitcher";
 import { useTranslation } from "react-i18next";
 import useIsMobile from "../hooks/useIsMobile";
@@ -11,11 +11,11 @@ import OdinLogo from "@/assets/png/odin-full.png";
 
 const Header = () => {
   const { t } = useTranslation();
-  const { isMobile } = useIsMobile(780);
+  const { isMobile } = useIsMobile(800);
   const { isModalOpen, hideModal, showModal } = useSideMenu();
 
   return (
-    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50 shadow-md h-24 rounded-b-lg">
+    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50 shadow-md h-24 rounded-b-lg ">
       {isModalOpen ? (
         <SideMenu hideModal={hideModal}>
           <SideMenuContent items={headerItems} hideModal={hideModal} />
@@ -33,9 +33,11 @@ const Header = () => {
           {headerItems.map((item) => (
             <p
               key={item.id}
-              className="cursor-pointer text-[#181818] text-base font-bold"
+              className="cursor-pointer text-[#181818] text-base font-bold hover:text-[#2171EC]"
             >
-              {t(item.name)}
+              <a href={`/#${item.name}`} className="no-underline text-inherit">
+                {t(item.name)}
+              </a>
             </p>
           ))}
           <LanguageSwitcher />

@@ -6,7 +6,10 @@ import KeyFeature from "./keyFeature";
 const KeyFeaturesSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="mx-4 md:mx-14 lg:mx-28 items-center text-center mb-20">
+    <div
+      className="mx-4 md:mx-14 lg:mx-28 items-center text-center mb-20"
+      id="keyFeatures"
+    >
       <div className="flex flex-col gap-3 mb-[83px]">
         <h1 className="text-[#212121] text-4xl md:text-5xl font-bold">
           Key Features

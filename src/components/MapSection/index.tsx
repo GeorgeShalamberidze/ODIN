@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import { useTranslation } from "react-i18next";
 import Map from "@/assets/png/map.png";
 import Iphone from "@/assets/png/iphoneX.png";
@@ -6,8 +6,8 @@ import Iphone from "@/assets/png/iphoneX.png";
 const MapSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="mb-20 mt-0 md:mt-[50px] mx-4 md:mx-14 lg:mx-28">
-      <div className="flex bg-white rounded-3xl flex-col md:flex-row">
+    <div className="mb-20 mt-0 md:mt-[50px] mx-4 md:mx-14 lg:mx-28 relative">
+      <div className="flex bg-white rounded-3xl flex-col md:flex-row" id="map">
         <div className="relative w-auto lg:w-1/2 flex-1">
           <img
             src={Map}

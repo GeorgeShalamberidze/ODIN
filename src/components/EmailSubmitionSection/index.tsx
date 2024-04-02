@@ -5,7 +5,7 @@ import "./style.css";
 
 const EmailSubmitionSection = () => {
   return (
-    <div className="bg-[#F5F5F5] mx-4 md:mx-14 lg:mx-28 flex justify-between gap-5">
+    <div className="bg-[#F5F5F5] mx-4 md:mx-14 lg:mx-28 flex justify-between gap-5 mb-16">
       <div className="flex items-center justify-between flex-1">
         <div className="max-w-[800px]">
           <div className="flex flex-col gap-3 md:gap-6">

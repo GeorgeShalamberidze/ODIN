@@ -12,16 +12,21 @@ const SideMenuContent = ({ items, hideModal }: SideMenuContentPropType) => {
   return (
     <div className="flex flex-col py-5 px-3 gap-4">
       {items.map((item) => (
-        <div
-          className="cursor-pointer hover:opacity-75  rounded-lg"
+        <a
+          href={`#${item.name}`}
+          className="no-underline text-inherit"
           key={item.id}
-          onClick={() => hideModal()}
         >
-          <div className="flex gap-3 items-center text-center text-white p-3">
-            {<item.icon size={25} />}
-            <p>{t(item.name)}</p>
+          <div
+            className="cursor-pointer hover:opacity-75  rounded-lg"
+            onClick={() => hideModal()}
+          >
+            <div className="flex gap-3 items-center text-center text-white p-3">
+              {<item.icon size={25} />}
+              <p>{t(item.name)}</p>
+            </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
