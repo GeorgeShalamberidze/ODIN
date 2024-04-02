@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import HowOdinWorksContent from "./odinWorkContent";
 import { senderItems, travelerItems } from "@/constants/odinWorkItems";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 const HowOdinWorks = () => {
   const [clientPicked, setCliendPicked] = useState<string>("sender");
-
+  const { t } = useTranslation();
   return (
     <div className="mb-24 relative" id="howOdinWorks">
       <Fade triggerOnce className="w-full" duration={800}>
         <div className="flex items-center justify-center text-center mb-12">
           <h1 className="text-4xl md:text-5xl text-[#212121]">
-            How Odin works
+            {t("howOdinWorks")}
           </h1>
         </div>
 

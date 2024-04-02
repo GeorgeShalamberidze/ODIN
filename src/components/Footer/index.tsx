@@ -2,8 +2,10 @@ import React from "react";
 import OdinWhiteLogo from "@/assets/logos/odin-white-logo.png";
 import { headerItems } from "@/constants/headerItems";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div
       className="w-full bg-[#021228] text-[#9FA7B6] text-base px-4 md:px-14 lg:px-28"
@@ -35,7 +37,7 @@ const Footer = () => {
                   key={item.id}
                 >
                   <div className="cursor-pointer hover:opacity-65">
-                    <p>{item.name}</p>
+                    <p>{t(item.name)}</p>
                   </div>
                 </a>
               ))}
