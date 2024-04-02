@@ -37,7 +37,10 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center md:justify-between items-center">
-            <a href="#emailSection" className="no-underline text-inherit">
+            <a
+              href="#emailSection"
+              className="no-underline text-inherit mb-5 md:mb-0"
+            >
               <div className="bg-[#262C40] h-fit text-white flex gap-3 w-fit px-8 py-[17px] rounded-md cursor-pointer mt-2">
                 <img src={GetUpdates} alt="light blub" className="w-6 h-6" />
                 <p className="text-base font-bold">{t("getUpdates")}</p>
@@ -54,6 +57,32 @@ const Hero = () => {
                   className="w-full h-44"
                 />
               </div>
+            </div>
+          </div>
+
+          <div className="h-fit w-full flex justify-end gap-4 md:hidden">
+            <div className="flex items-end w-1/4">
+              <img
+                src={LeftArrow}
+                alt="connector arrow"
+                className="h-[55px] w-full object-contain"
+              />
+            </div>
+            <div className="relative w-fit">
+              <img
+                src={ImgOne}
+                alt="gift wrap up"
+                className="w-full h-full object-cover max-h-[150px]"
+              />
+            </div>
+          </div>
+
+          <div className="h-fit w-full flex gap-4 md:hidden justify-between">
+            <div className="flex justify-end">
+              <img src={ImgTwo} alt="gift wrap up" className="w-full h-44" />
+            </div>
+            <div className="gap-4 justify-end hidden 3xs:flex">
+              <img src={ImgThree} alt="gift wrap up" className="w-full h-44" />
             </div>
           </div>
         </div>

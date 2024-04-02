@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
           <div className="h-[1px] w-full bg-[#9FA7B6] mb-6"></div>
           <div className="flex w-full justify-end pb-6">
-            Copyright © 2023 Hatchproof. All rights reserved.
+            Copyright © 2023 ODIN. All rights reserved.
           </div>
         </footer>
       </Fade>

@@ -6,11 +6,12 @@ import { Fade } from "react-awesome-reveal";
 
 const MapSection = () => {
   const { t } = useTranslation();
+
   return (
     <div className="mb-20 mt-0 md:mt-[50px] mx-4 md:mx-14 lg:mx-28 relative">
       <Fade className="w-full" triggerOnce duration={800}>
         <div
-          className="flex bg-white rounded-3xl flex-col md:flex-row"
+          className="flex bg-white rounded-3xl flex-col-reverse md:flex-row"
           id="map"
         >
           <div className="relative w-auto lg:w-1/2 flex-1">
