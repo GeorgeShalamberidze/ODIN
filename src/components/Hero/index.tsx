@@ -1,5 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import ImgOne from "@/assets/png/parcels/img1.png";
+import LeftArrow from "@/assets/png//arrow-ltr.png";
+import GetUpdates from "@/assets/png/get-updates.png";
+import ImgTwo from "@/assets/png/parcels/img2.png";
+import ImgThree from "@/assets/png/parcels/img3.png";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -16,12 +21,12 @@ const Hero = () => {
           <div className="h-fit w-full hidden justify-end md:flex">
             <div className="relative w-fit">
               <img
-                src="./src/assets/png/parcels/img1.png "
+                src={ImgOne}
                 alt="gift wrap up"
                 className="w-[395px] h-[222px] object-cover"
               />
               <img
-                src="./src/assets/png/arrow-ltr.png "
+                src={LeftArrow}
                 alt="connector arrow"
                 className="hidden xl:block absolute bottom-0 -left-28 h-9"
               />
@@ -31,28 +36,16 @@ const Hero = () => {
 
         <div className="flex justify-center md:justify-between items-center">
           <div className="bg-[#262C40] h-fit text-white flex gap-3 w-fit px-8 py-[17px] rounded-md cursor-pointer mt-2">
-            <img
-              src="./src/assets/png/get-updates.png"
-              alt="light blub"
-              className="w-6 h-6"
-            />
+            <img src={GetUpdates} alt="light blub" className="w-6 h-6" />
             <p className="text-base font-bold">{t("getUpdates")}</p>
           </div>
 
           <div className="hidden md:flex gap-3">
             <div className="flex justify-end">
-              <img
-                src="./src/assets/png/parcels/img2.png"
-                alt="gift wrap up"
-                className="w-full h-44"
-              />
+              <img src={ImgTwo} alt="gift wrap up" className="w-full h-44" />
             </div>
             <div className="hidden lg:flex gap-4 justify-end">
-              <img
-                src="./src/assets/png/parcels/img3.png"
-                alt="gift wrap up"
-                className="w-full h-44"
-              />
+              <img src={ImgThree} alt="gift wrap up" className="w-full h-44" />
             </div>
           </div>
         </div>

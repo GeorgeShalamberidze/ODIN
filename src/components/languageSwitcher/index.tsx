@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { GoGlobe } from "react-icons/go";
 import { useTranslation } from "react-i18next";
+import GeoFlag from "@/assets/svg/geo.svg";
+import EngFlag from "@/assets/svg/eng.svg";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -33,7 +35,7 @@ const LanguageSwitcher = () => {
               {({ active }) => (
                 <img
                   className="w-full object-contain cursor-pointer h-10"
-                  src="src/assets/svg/geo.svg"
+                  src={GeoFlag}
                   alt="georgian flag"
                   onClick={() => handleLanguageSwitch("ka")}
                 />
@@ -44,8 +46,8 @@ const LanguageSwitcher = () => {
               {({ active }) => (
                 <img
                   className="w-full object-contain cursor-pointer h-10"
-                  src="src/assets/svg/eng.svg"
-                  alt="georgian flag"
+                  src={EngFlag}
+                  alt="English flag"
                   onClick={() => handleLanguageSwitch("en")}
                 />
               )}

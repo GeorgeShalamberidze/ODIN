@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { securityItems } from "@/constants/securityItems";
+import CheckWhite from "@/assets/png/check-white.png";
+import CheckBlue from "@/assets/png/check-blue.png";
 
 const SecurityOptionSwitcher = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
@@ -30,13 +32,13 @@ const SecurityOptionSwitcher = () => {
           >
             {selectedItem === i ? (
               <img
-                src="./src/assets/png/check-white.png"
+                src={CheckWhite}
                 alt="checkmark"
                 className="w-8 h-8 hidden 3xs:flex"
               />
             ) : (
               <img
-                src="./src/assets/png/check-blue.png"
+                src={CheckBlue}
                 alt="checkmark"
                 className="w-8 h-8 hidden 3xs:flex"
               />

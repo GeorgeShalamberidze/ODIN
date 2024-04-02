@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Map from "@/assets/png/map.png";
+import Iphone from "@/assets/png/iphoneX.png";
 
 const MapSection = () => {
   const { t } = useTranslation();
@@ -8,12 +10,12 @@ const MapSection = () => {
       <div className="flex bg-white rounded-3xl flex-col md:flex-row">
         <div className="relative w-auto lg:w-1/2 flex-1">
           <img
-            src="./src/assets/png/map.png"
+            src={Map}
             alt="google map"
             className="max-w-full md:max-w-full sm w-full h-full object-fill md:object-cover rounded-3xl md:rounded-t-3xl"
           />
           <img
-            src="./src/assets/png/iphoneX.png"
+            src={Iphone}
             alt="Iphone X"
             className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 xl:left-[600px] xl:w-[179px] w-20 xs:w-28 z-20 overflow-hidden sm:w-48 md:w-24 lg:w-28"
           />

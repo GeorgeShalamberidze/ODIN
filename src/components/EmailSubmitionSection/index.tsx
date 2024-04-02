@@ -1,5 +1,6 @@
 import React from "react";
 import FormikForm from "../Formik";
+import Parcel from "@/assets/png/parcel101.png";
 import "./style.css";
 
 const EmailSubmitionSection = () => {
@@ -24,7 +25,7 @@ const EmailSubmitionSection = () => {
 
       <div className="flex-1 justify-end hidden md:flex">
         <img
-          src="./src/assets/png/parcel101.png"
+          src={Parcel}
           alt="handout parcel"
           className="h-[431px] my-[31px] object-cover rounded-3xl"
         />

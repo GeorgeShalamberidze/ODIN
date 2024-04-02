@@ -1,5 +1,4 @@
 import React from "react";
-import OdinLogo from "@/assets/svg/odin-bg-white.svg";
 import LanguageSwitcher from "../languageSwitcher";
 import { useTranslation } from "react-i18next";
 import useIsMobile from "../hooks/useIsMobile";
@@ -8,6 +7,7 @@ import useSideMenu from "../hooks/useSideMenu";
 import SideMenu from "../sideMenu";
 import { headerItems } from "@/constants/headerItems";
 import SideMenuContent from "../sideMenuContent";
+import OdinLogo from "@/assets/png/odin-full.png";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const Header = () => {
       ) : null}
       <a href="#">
         <img
-          src="./src/assets/png/odin-full.png"
+          src={OdinLogo}
           alt="company logo"
           className="w-40 pl-5 cursor-pointer"
         />
