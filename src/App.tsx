@@ -5,6 +5,7 @@ import KeyFeaturesSection from "./components/BenefitsSection";
 import EmailSubmitionSection from "./components/EmailSubmitionSection";
 import "react-toastify/dist/ReactToastify.css";
 import HowOdinWorks from "./components/HowOdinWorks";
+import SecuritySection from "./components/SecuritySection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MapSection />
       <HowOdinWorks />
       <KeyFeaturesSection />
+      <SecuritySection />
       <EmailSubmitionSection />
     </div>
   );

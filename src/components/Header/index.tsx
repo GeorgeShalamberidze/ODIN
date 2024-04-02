@@ -15,7 +15,7 @@ const Header = () => {
   const { isModalOpen, hideModal, showModal } = useSideMenu();
 
   return (
-    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50 shadow-md h-32">
+    <div className="flex justify-between items-center w-full fixed left-0 top-0 bg-white z-50 shadow-md h-24 rounded-b-lg">
       {isModalOpen ? (
         <SideMenu hideModal={hideModal}>
           <SideMenuContent items={headerItems} hideModal={hideModal} />
@@ -33,7 +33,7 @@ const Header = () => {
           {headerItems.map((item) => (
             <p
               key={item.id}
-              className="cursor-pointer text-[#181818] text-base"
+              className="cursor-pointer text-[#181818] text-base font-bold"
             >
               {t(item.name)}
             </p>

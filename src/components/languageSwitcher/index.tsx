@@ -13,7 +13,7 @@ const LanguageSwitcher = () => {
   return (
     <Menu as="div" className="relative">
       <div className="flex items-center justify-center">
-        <Menu.Button>
+        <Menu.Button className="cursor-pointer outline-none border-none bg-white">
           <GoGlobe size={25} aria-hidden="true" />
         </Menu.Button>
       </div>
