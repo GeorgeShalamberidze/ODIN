@@ -39,9 +39,9 @@ const Hero = () => {
           <div className="flex justify-center md:justify-between items-center">
             <a
               href="#emailSection"
-              className="no-underline text-inherit mb-5 md:mb-0"
+              className="no-underline text-inherit mb-5 md:mb-0 w-full 3xs:w-auto mx-7 3xs:mx-0"
             >
-              <div className="bg-[#262C40] h-fit text-white flex gap-3 w-fit px-8 py-[17px] rounded-md cursor-pointer mt-2">
+              <div className="bg-[#262C40] h-fit text-white flex gap-3 w-full px-8 py-[17px] rounded-md cursor-pointer mt-2 justify-center items-center 3xs:w-fit">
                 <img src={GetUpdates} alt="light blub" className="w-6 h-6" />
                 <p className="text-base font-bold">{t("getUpdates")}</p>
               </div>
