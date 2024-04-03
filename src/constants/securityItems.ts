@@ -26,7 +26,7 @@ export const securityItems: SecurityItem[] = [
     imgUrlGeo: SecurityImgGeoThree,
   },
   {
-    title: "trustTitleOne",
+    title: "trustTitleFour",
     imgUrlEn: SecurityImgFour,
     imgUrlGeo: SecurityImgGeoFour,
   },
