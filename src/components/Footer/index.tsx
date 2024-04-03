@@ -1,5 +1,5 @@
 import React from "react";
-import OdinWhiteLogo from "@/assets/logos/odin-white-logo.png";
+import OdinWhiteLogo from "@/assets/svg/odin-white.svg";
 import { headerItems } from "@/constants/headerItems";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
@@ -30,17 +30,19 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-3 flex-1 md:flex-none font-bold items-end 3xs:items-start">
-              {headerItems.map((item) => (
-                <a
-                  href={`#${item.name}`}
-                  className="no-underline text-inherit"
-                  key={item.id}
-                >
-                  <div className="cursor-pointer hover:opacity-65">
-                    <p>{t(item.name)}</p>
-                  </div>
-                </a>
-              ))}
+              {headerItems.map((item, i) =>
+                item.id !== 3 ? (
+                  <a
+                    href={`#${item.name}`}
+                    className="no-underline text-inherit"
+                    key={item.id}
+                  >
+                    <div className="cursor-pointer hover:opacity-65">
+                      <p>{t(item.name)}</p>
+                    </div>
+                  </a>
+                ) : null
+              )}
             </div>
             <div className="flex flex-col gap-4 flex-1 md:flex-none font-bold">
               <div className="font-normal">{t("contacts")}</div>

@@ -10,8 +10,9 @@ import { useTranslation } from "react-i18next";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
-  const { t } = useTranslation();
-  const { isMobile } = useIsMobile(800);
+  const { t, i18n } = useTranslation();
+  console.log(i18n.language);
+  const { isMobile } = useIsMobile(i18n.language == "en" ? 800 : 1100);
   const { isModalOpen, hideModal, showModal } = useSideMenu();
 
   return (
