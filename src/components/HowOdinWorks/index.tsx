@@ -29,7 +29,7 @@ const HowOdinWorks = () => {
                 setCliendPicked("sender");
               }}
             >
-              <p>Sender</p>
+              <p>{t("sender")}</p>
             </div>
             <div
               className={`${
@@ -43,7 +43,7 @@ const HowOdinWorks = () => {
                 setCliendPicked("traveler");
               }}
             >
-              <p>Traveler</p>
+              <p>{t("traveler")}</p>
             </div>
           </div>
         </div>

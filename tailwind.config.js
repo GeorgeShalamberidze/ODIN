@@ -24,6 +24,7 @@ export default {
       xs: "350px",
       "2xs": "400px",
       "3xs": "470px",
+      xsm: 600,
       sm: "640px",
       md: "768px",
       "2md": "920px",

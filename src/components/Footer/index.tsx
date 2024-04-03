@@ -43,13 +43,18 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex flex-col gap-4 flex-1 md:flex-none font-bold">
-              <div className="font-normal">Contacts</div>
-              <p className="hover:opacity-65 cursor-pointer">info@odin.ge</p>
+              <div className="font-normal">{t("contacts")}</div>
+              <a
+                href="mailto:info@odin.ge"
+                className="no-underline text-inherit"
+              >
+                <p className="hover:opacity-65 cursor-pointer">info@odin.ge</p>
+              </a>
             </div>
           </div>
           <div className="h-[1px] w-full bg-[#9FA7B6] mb-6"></div>
           <div className="flex w-full justify-end pb-6">
-            Copyright © 2023 ODIN. All rights reserved.
+            Copyright © 2024 ODIN. All rights reserved.
           </div>
         </footer>
       </Fade>

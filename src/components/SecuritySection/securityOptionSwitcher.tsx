@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { securityItems } from "@/constants/securityItems";
 import CheckWhite from "@/assets/png/check-white.png";
 import CheckBlue from "@/assets/png/check-blue.png";
+import { useTranslation } from "react-i18next";
 
 const SecurityOptionSwitcher = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
+  const { t } = useTranslation();
 
   return (
     <div className="flex w-full gap-8 2md:gap-5 flex-col-reverse 2md:flex-row">
@@ -23,7 +25,7 @@ const SecurityOptionSwitcher = () => {
             key={i}
             className={`${
               selectedItem == i ? "bg-[#2171EC]" : "bg-white"
-            } w-full py-11 pl-6 pr-4 xl:pl-12 xl:pr-5 flex items-center text-center  bg-[#2171EC] rounded-3xl gap-6 cursor-pointer max-h-[120px] justify-center 3xs:justify-start`}
+            } w-full py-5 lg:py-11 pl-6 pr-4 xl:pl-12 xl:pr-5 flex items-center text-center  bg-[#2171EC] rounded-3xl gap-6 cursor-pointer max-h-[120px] justify-center 3xs:justify-start`}
             onClick={() => setSelectedItem(i)}
             onMouseEnter={() => {
               if (selectedItem === i) return;
@@ -49,7 +51,7 @@ const SecurityOptionSwitcher = () => {
                 selectedItem == i ? "text-white" : "text-[#021228]"
               } text-2xl  font-bold`}
             >
-              {item.title}
+              {t(item.title)}
             </p>
           </div>
         ))}

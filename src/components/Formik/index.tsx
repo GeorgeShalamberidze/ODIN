@@ -4,8 +4,10 @@ import { validate } from "@/helpers/validateEmail";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { AiOutlineLoading } from "react-icons/ai";
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 const FormikForm = () => {
+  const { t } = useTranslation();
   return (
     <Formik
       validate={validate}
@@ -27,7 +29,7 @@ const FormikForm = () => {
           <Form className="flex mt-5 md:mt-9 gap-4 flex-col 2xs:flex-row">
             <Field
               type="email"
-              placeholder="Enter Email"
+              placeholder={t("enterEmail")}
               name="email"
               className="h-[72px] w-full rounded-xl pl-4 outline-none text-base border-none"
             />

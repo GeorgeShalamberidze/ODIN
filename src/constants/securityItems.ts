@@ -1,24 +1,24 @@
 import { SecurityItem } from "@/types/securityItem.type";
-import SecurityImgOne from "@/assets/png/security/security-item1.png";
-import SecurityImgTwo from "@/assets/png/security/security-item2.png";
-import SecurityImgThree from "@/assets/png/security/security-item3.png";
-import SecurityImgFour from "@/assets/png/security/security-item4.png";
+import SecurityImgOne from "@/assets/png/security/security-item1.svg";
+import SecurityImgTwo from "@/assets/png/security/security-item2.svg";
+import SecurityImgThree from "@/assets/png/security/security-item3.svg";
+import SecurityImgFour from "@/assets/png/security/security-item4.svg";
 
 export const securityItems: SecurityItem[] = [
   {
-    title: "Rigorous Verification Process",
+    title: "trustTitleOne",
     imgUrl: SecurityImgOne,
   },
   {
-    title: "Open Parcel Inspection",
+    title: "trustTitleTwo",
     imgUrl: SecurityImgTwo,
   },
   {
-    title: "Insurance Options",
+    title: "trustTitleThree",
     imgUrl: SecurityImgThree,
   },
   {
-    title: "Secure Payments and Refunds",
+    title: "trustTitleOne",
     imgUrl: SecurityImgFour,
   },
 ];

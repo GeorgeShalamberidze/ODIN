@@ -1,7 +1,7 @@
-import React, { MutableRefObject } from "react";
-import { useTranslation } from "react-i18next";
-import Map from "@/assets/png/map.png";
+import React from "react";
+import Map from "@/assets/png/map.svg";
 import Iphone from "@/assets/png/iphoneX.png";
+import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
 
 const MapSection = () => {
@@ -23,11 +23,11 @@ const MapSection = () => {
             <img
               src={Iphone}
               alt="Iphone X"
-              className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 xl:left-[600px] xl:w-[179px] w-20 xs:w-28 z-20 overflow-hidden sm:w-48 md:w-24 lg:w-28"
+              className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 xl:left-1/2 xl:w-[179px] w-20 xs:w-28 z-20 overflow-hidden sm:w-48 md:w-24 lg:w-28"
             />
           </div>
-          <div className="flex flex-col justify-center gap-8 p-8 xl:pl-36 text-center lg:text-start flex-1">
-            <p className="text-2xl text-[#262C40] tracking-[-1px] font-bold">
+          <div className="flex flex-col justify-center gap-8 p-8 xl:pl-36 flex-1">
+            <p className="text-2xl text-[#262C40] tracking-[-1px] font-bold text-center lg:text-start">
               {t("mapSectionMainText")}
             </p>
             <p className="text-sm md:text-base">

@@ -14,7 +14,7 @@ const KeyFeaturesSection = () => {
       <Fade className="w-full" triggerOnce duration={800}>
         <div className="flex flex-col gap-3 mb-[83px]">
           <h1 className="text-[#212121] text-4xl md:text-5xl font-bold">
-            Key Features
+            {t("keyFeatures")}
           </h1>
         </div>
 

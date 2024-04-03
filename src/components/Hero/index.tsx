@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import ImgOne from "@/assets/png/parcels/img1.png";
+import ImgOne from "@/assets/png/parcels/img1.svg";
 import LeftArrow from "@/assets/png//arrow-ltr.png";
 import GetUpdates from "@/assets/png/get-updates.png";
-import ImgTwo from "@/assets/png/parcels/img2.png";
-import ImgThree from "@/assets/png/parcels/img3.png";
+import ImgTwo from "@/assets/png/parcels/img2.svg";
+import ImgThree from "@/assets/png/parcels/img3.svg";
 import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
@@ -12,10 +12,10 @@ const Hero = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <Fade triggerOnce className="w-full" duration={800}>
-        <div className="flex flex-col gap-2 mx-4 md:mx-14 lg:mx-28 py-10 md:py-[70px] text-center md:text-start">
+        <div className="flex flex-col gap-2 mx-4 md:mx-14 lg:mx-28 py-10 md:py-[70px] ">
           <div className="flex justify-center md:justify-between gap-6 mt-4 w-full ">
-            <div className="flex flex-col gap-4 max-w-[600px] w-full md:pr-6">
-              <h1 className="text-3xl md:text-5xl text-[#262C40] font-bold">
+            <div className="flex flex-col gap-4 max-w-[600px] w-full md:pr-6 ">
+              <h1 className="text-3xl md:text-5xl text-[#021228] font-bold text-center md:text-start">
                 {t("heroMainText")}
               </h1>
               <p className="text-sm md:text-base">{t("heroSecondaryText")}</p>

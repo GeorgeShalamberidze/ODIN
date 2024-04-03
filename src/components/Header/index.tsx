@@ -1,13 +1,13 @@
-import React, { MutableRefObject } from "react";
+import React from "react";
 import LanguageSwitcher from "../languageSwitcher";
-import { useTranslation } from "react-i18next";
 import useIsMobile from "../hooks/useIsMobile";
-import { GiHamburgerMenu } from "react-icons/gi";
 import useSideMenu from "../hooks/useSideMenu";
 import SideMenu from "../sideMenu";
-import { headerItems } from "@/constants/headerItems";
 import SideMenuContent from "../sideMenuContent";
-import OdinLogo from "@/assets/png/odin-full.png";
+import OdinLogo from "@/assets/svg/odin.svg";
+import { headerItems } from "@/constants/headerItems";
+import { useTranslation } from "react-i18next";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -43,8 +43,9 @@ const Header = () => {
           <LanguageSwitcher />
         </div>
       ) : (
-        <div className="flex mr-5 cursor-pointer" onClick={() => showModal()}>
-          <GiHamburgerMenu size={35} />
+        <div className="flex mr-5 cursor-pointer gap-5 items-center justify-center">
+          <LanguageSwitcher />
+          <GiHamburgerMenu size={35} onClick={() => showModal()} />
         </div>
       )}
     </div>
