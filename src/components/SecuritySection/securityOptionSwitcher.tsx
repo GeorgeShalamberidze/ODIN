@@ -6,14 +6,21 @@ import { useTranslation } from "react-i18next";
 
 const SecurityOptionSwitcher = () => {
   const [selectedItem, setSelectedItem] = useState<number>(0);
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   return (
     <div className="flex w-full gap-8 2md:gap-5 flex-col-reverse 2md:flex-row">
       <div className="flex-1 flex justify-center items-center ">
         <div className="w-full h-[350px] 3xs:h-[440px] flex items-center justify-center">
           <img
-            src={securityItems[selectedItem].imgUrl}
+            src={
+              language == "en"
+                ? securityItems[selectedItem].imgUrlEn
+                : securityItems[selectedItem].imgUrlGeo
+            }
             alt="parcel photos"
             className="object-contain w-full h-full"
           />

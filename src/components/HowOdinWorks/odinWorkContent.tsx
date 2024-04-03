@@ -11,17 +11,21 @@ const HowOdinWorksContent = ({
   content,
   isSender,
 }: HowOdinWorksContentPropType) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <div className="flex gap-4 flex-col">
       {content.map((data) => (
         <div
           key={data.id}
-          className={`${
-            isSender ? "flex-row-reverse" : ""
-          } flex items-center justify-center gap-4 h-fit md:max-h-[260px] flex-col md:flex-row`}
+          className={`${isSender ? "flex-row-reverse" : ""} ${
+            i18n.language === "en" ? "md:max-h-[260px]" : "md:max-h-[330px]"
+          } flex items-center justify-center gap-4 h-fit flex-col md:flex-row`}
         >
-          <div className="w-full flex flex-col gap-3 bg-white rounded-2xl h-fit md:h-[260px] justify-center py-8">
+          <div
+            className={`${
+              i18n.language === "en" ? "md:h-[260px]" : "md:h-[330px]"
+            } w-full flex flex-col gap-3 bg-white rounded-2xl h-fit md:h-[260px] justify-center py-8`}
+          >
             <h1 className="text-2xl sm:text-3xl md:text-xl lg:text-2xl xl:text-2xl text-[#021228] px-8 text-center md:text-start">
               {t(data.title)}
             </h1>
@@ -31,7 +35,11 @@ const HowOdinWorksContent = ({
           </div>
           <div className="w-full">
             <img
-              className="h-[180px] lg:h-[260px] md:h-[260px] w-full object-cover rounded-3xl"
+              className={`${
+                i18n.language === "en"
+                  ? "h-[180px] lg:h-[260px] md:h-[260px]"
+                  : "h-[260px] lg:h-[330px] md:h-[330px]"
+              } h-[180px] lg:h-[260px] md:h-[260px] w-full object-cover rounded-3xl`}
               src={data.imgUrl}
               alt={data.title}
             />

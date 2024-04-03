@@ -1,4 +1,5 @@
 export type SecurityItem = {
   title: string;
-  imgUrl: string;
+  imgUrlEn: string;
+  imgUrlGeo: string;
 };

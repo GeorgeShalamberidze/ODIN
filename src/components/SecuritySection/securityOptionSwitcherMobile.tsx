@@ -8,7 +8,10 @@ const SecurityOptionSwitcherMobile = () => {
   const [selectedItem, setSelectedItem] = useState<number | undefined>(
     undefined
   );
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   return (
     <div className="flex w-full gap-8 2md:gap-5 flex-col-reverse 2md:flex-row">
@@ -55,7 +58,11 @@ const SecurityOptionSwitcherMobile = () => {
               {selectedItem === i ? (
                 <div className="flex items-center justify-center w-11/12">
                   <img
-                    src={securityItems?.[i].imgUrl}
+                    src={
+                      language == "en"
+                        ? securityItems?.[i].imgUrlEn
+                        : securityItems?.[i].imgUrlGeo
+                    }
                     alt="parcel photos"
                     className="object-contain max-w-[300px] w-full"
                   />
