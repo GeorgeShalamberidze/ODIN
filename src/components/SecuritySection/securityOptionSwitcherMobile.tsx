@@ -22,9 +22,7 @@ const SecurityOptionSwitcherMobile = () => {
               className={`${
                 selectedItem == i ? "bg-[#2171EC]" : "bg-white"
               } w-full mx-auto py-5 lg:py-11 pl-6 pr-4 xl:pl-12 xl:pr-5 flex items-center text-center  bg-[#2171EC] rounded-3xl gap-6 cursor-pointer max-h-[120px] justify-center 3xs:justify-start`}
-              onClick={() =>
-                setSelectedItem(selectedItem === i ? undefined : i)
-              }
+              onClick={() => setSelectedItem(i)}
               onMouseEnter={() => {
                 if (selectedItem === i) return;
                 setSelectedItem(i);
