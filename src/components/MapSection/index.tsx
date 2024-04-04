@@ -1,5 +1,5 @@
 import React from "react";
-import Map from "@/assets/png/map.svg";
+import Map from "@/assets/png/map.webp";
 import Iphone from "@/assets/png/iphoneX.png";
 import { useTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";

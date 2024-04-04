@@ -1,6 +1,6 @@
 import React from "react";
 import FormikForm from "../Formik";
-import Parcel from "@/assets/png/parcel101.svg";
+import Parcel from "@/assets/png/parcel101.webp";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 
