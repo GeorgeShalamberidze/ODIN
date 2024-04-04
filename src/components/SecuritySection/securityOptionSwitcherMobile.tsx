@@ -15,20 +15,20 @@ const SecurityOptionSwitcherMobile = () => {
 
   return (
     <div className="flex w-full gap-8 2md:gap-5 flex-col-reverse 2md:flex-row">
-      <div className="flex-1 flex justify-center items-center flex-col gap-4">
+      <div className="flex-1 flex justify-center items-center flex-col gap-2">
         {securityItems.map((item, i) => (
           <div key={i} className="w-full">
             <div
               className={`${
                 selectedItem == i ? "bg-[#2171EC]" : "bg-white"
-              } w-full mx-auto py-5 lg:py-11 pl-6 pr-4 xl:pl-12 xl:pr-5 flex items-center text-center  bg-[#2171EC] rounded-3xl gap-6 cursor-pointer max-h-[120px] justify-center 3xs:justify-start`}
+              } w-full mx-auto py-3 md:py-4 lg:py-11 pl-6 pr-4 xl:pl-12 xl:pr-5 flex items-center text-center  bg-[#2171EC] rounded-xl gap-6 cursor-pointer max-h-[120px] justify-center 3xs:justify-start`}
               onClick={() => setSelectedItem(i)}
               onMouseEnter={() => {
                 if (selectedItem === i) return;
                 setSelectedItem(i);
               }}
             >
-              <div className="flex gap-6">
+              <div className="flex gap-6 items-center">
                 {selectedItem === i ? (
                   <img
                     src={CheckWhite}
@@ -45,7 +45,7 @@ const SecurityOptionSwitcherMobile = () => {
                 <p
                   className={`${
                     selectedItem == i ? "text-white" : "text-[#021228]"
-                  } text-2xl  font-bold`}
+                  } text-lg md:text-2xl`}
                 >
                   {t(item.title)}
                 </p>

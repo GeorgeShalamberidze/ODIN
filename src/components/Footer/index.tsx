@@ -29,7 +29,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 flex-1 md:flex-none font-bold items-end 3xs:items-start">
+            <div className="flex flex-col gap-3 flex-1 md:flex-none font-bold items-start md:items-end 3xs:items-start">
               {headerItems.map((item, i) =>
                 item.id !== 3 ? (
                   <a
@@ -37,14 +37,14 @@ const Footer = () => {
                     className="no-underline text-inherit"
                     key={item.id}
                   >
-                    <div className="cursor-pointer hover:opacity-65">
+                    <div className="cursor-pointer hover:opacity-65 text-sm md:text-base">
                       <p>{t(item.name)}</p>
                     </div>
                   </a>
                 ) : null
               )}
             </div>
-            <div className="flex flex-col gap-4 flex-1 md:flex-none font-bold">
+            <div className="flex flex-col gap-4 flex-1 md:flex-none font-bold text-end md:text-start">
               <div className="font-normal">{t("contacts")}</div>
               <a
                 href="mailto:info@odin.ge"

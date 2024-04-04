@@ -14,10 +14,10 @@ const EmailSubmitionSection = () => {
       <div className="flex items-center justify-between flex-1">
         <div className="max-w-[800px]">
           <div className="flex flex-col gap-3 md:gap-6">
-            <p className="text-2xl md:text-[32px] font-bold text-[#262C40]">
+            <p className="text-2xl md:text-[32px] font-bold text-[#262C40] text-center md:text-start">
               {t("joinCommunity")}
             </p>
-            <p className="text-md md:text-xl text-[#262C40]">
+            <p className="text-sm md:text-xl text-[#262C40]">
               {t("joinCommunityInfo")}
             </p>
           </div>

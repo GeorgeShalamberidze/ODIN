@@ -9,20 +9,20 @@ const HowOdinWorks = () => {
   return (
     <div className="mb-24 relative" id="howOdinWorks">
       <Fade triggerOnce className="w-full" duration={800}>
-        <div className="flex items-center justify-center text-center mb-12">
-          <h1 className="text-4xl md:text-5xl text-[#212121]">
+        <div className="flex items-center justify-center text-center mb-0 md:mb-10">
+          <h1 className="text-2xl md:text-5xl text-[#212121]">
             {t("howOdinWorks")}
           </h1>
         </div>
 
-        <div className="flex items-center justify-center h-28 w-full mb-6">
-          <div className="w-11/12 xs:max-w-[414px] flex gap-4 bg-white p-4 px-6 rounded-3xl">
+        <div className="flex items-center justify-center h-28 w-full mb-2 md:mb-6">
+          <div className="w-11/12 xs:max-w-[414px] flex gap-4 bg-white p-2 rounded-xl justify-between">
             <div
               className={`${
                 clientPicked == "sender"
                   ? "bg-[#2171EC] text-white"
                   : "bg-white text-black"
-              } h-[81px] w-[178px] flex justify-center items-center text-2xl font-bold rounded-2xl px cursor-pointer`}
+              } h-14 md:h-[81px] w-[178px] flex justify-center items-center text-md md:text-xl font-bold rounded-xl px cursor-pointer`}
               onClick={() => setCliendPicked("sender")}
               onMouseEnter={() => {
                 if (clientPicked == "sender") return;
@@ -36,7 +36,7 @@ const HowOdinWorks = () => {
                 clientPicked == "traveler"
                   ? "bg-[#2171EC] text-white"
                   : "bg-white text-black"
-              }  h-[81px] w-[178px] flex justify-center items-center text-2xl font-bold rounded-2xl px cursor-pointer`}
+              } h-14  md:h-[81px] w-[178px] flex justify-center items-center text-md md:text-xl font-bold rounded-xl px cursor-pointer`}
               onClick={() => setCliendPicked("traveler")}
               onMouseEnter={() => {
                 if (clientPicked == "traveler") return;

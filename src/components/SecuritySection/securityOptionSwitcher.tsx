@@ -56,7 +56,7 @@ const SecurityOptionSwitcher = () => {
             <p
               className={`${
                 selectedItem == i ? "text-white" : "text-[#021228]"
-              } text-2xl  font-bold`}
+              } text-2xl font-bold`}
             >
               {t(item.title)}
             </p>

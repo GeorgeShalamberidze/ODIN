@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="flex flex-col gap-2 mx-4 md:mx-14 lg:mx-28 py-10 md:py-[70px] ">
           <div className="flex justify-center md:justify-between gap-6 mt-4 w-full ">
             <div className="flex flex-col gap-4 max-w-[600px] w-full md:pr-6 ">
-              <h1 className="text-3xl md:text-5xl text-[#021228] font-bold text-center md:text-start">
+              <h1 className="text-2xl md:text-5xl text-[#021228] font-bold text-center md:text-start">
                 {t("heroMainText")}
               </h1>
               <p className="text-sm md:text-base">{t("heroSecondaryText")}</p>

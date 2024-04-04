@@ -11,8 +11,8 @@ const SecuritySection = () => {
   return (
     <div className="mb-12 mx-4 md:mx-14 lg:mx-28" id="trustAndSecurity">
       <Fade className="w-full" triggerOnce duration={800}>
-        <div className="flex items-center justify-center mb-12">
-          <h1 className="text-[#212121] text-4xl md:text-5xl font-bold">
+        <div className="flex items-center justify-center mb-6">
+          <h1 className="text-[#212121] text-2xl md:text-5xl font-bold text-center">
             {t("trustAndSecurity")}
           </h1>
         </div>

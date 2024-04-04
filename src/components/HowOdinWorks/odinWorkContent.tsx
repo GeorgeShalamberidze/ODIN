@@ -26,10 +26,10 @@ const HowOdinWorksContent = ({
               i18n.language === "en" ? "md:h-[260px]" : "md:h-[330px]"
             } w-full flex flex-col gap-3 bg-white rounded-2xl h-fit md:h-[260px] justify-center py-8`}
           >
-            <h1 className="text-2xl sm:text-3xl md:text-xl lg:text-2xl xl:text-2xl text-[#021228] px-8 text-center md:text-start">
+            <h1 className="text-xl sm:text-3xl md:text-xl lg:text-2xl xl:text-2xl text-[#021228] px-8 text-center md:text-start">
               {t(data.title)}
             </h1>
-            <p className="sm:text-2xl md:text-sm lg:text-base text-[#636B77] px-8">
+            <p className="sm:text-2xl md:text-sm lg:text-base text-sm text-[#636B77] px-8">
               {t(data.info)}
             </p>
           </div>
