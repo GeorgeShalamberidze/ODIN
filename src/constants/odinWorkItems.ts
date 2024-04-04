@@ -1,15 +1,15 @@
 import { OdinWorkContent } from "@/types/odinWorkContent.type";
-import SenderImgOne from "@/assets/png/odin-work/sender/img1.svg";
-import SenderImgTwo from "@/assets/png/odin-work/sender/img2.svg";
-import SenderImgThree from "@/assets/png/odin-work/sender/img3.svg";
-import SenderImgFour from "@/assets/png/odin-work/sender/img4.svg";
-import SenderImgFive from "@/assets/png/odin-work/sender/img5.svg";
+import SenderImgOne from "@/assets/png/odin-work/sender/img1.webp";
+import SenderImgTwo from "@/assets/png/odin-work/sender/img2.webp";
+import SenderImgThree from "@/assets/png/odin-work/sender/img3.webp";
+import SenderImgFour from "@/assets/png/odin-work/sender/img4.webp";
+import SenderImgFive from "@/assets/png/odin-work/sender/img5.webp";
 
-import TravelerImgOne from "@/assets/png/odin-work/traveler/img1.svg";
-import TravelerImgTwo from "@/assets/png/odin-work/traveler/img2.svg";
-import TravelerImgThree from "@/assets/png/odin-work/traveler/img3.svg";
-import TravelerImgFour from "@/assets/png/odin-work/traveler/img4.svg";
-import TravelerImgFive from "@/assets/png/odin-work/traveler/img5.svg";
+import TravelerImgOne from "@/assets/png/odin-work/traveler/img1.webp";
+import TravelerImgTwo from "@/assets/png/odin-work/traveler/img2.webp";
+import TravelerImgThree from "@/assets/png/odin-work/traveler/img3.webp";
+import TravelerImgFour from "@/assets/png/odin-work/traveler/img4.webp";
+import TravelerImgFive from "@/assets/png/odin-work/traveler/img5.webp";
 
 export const senderItems: OdinWorkContent[] = [
   {

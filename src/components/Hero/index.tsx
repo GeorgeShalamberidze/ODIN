@@ -1,11 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import ImgOne from "@/assets/png/parcels/img1.svg";
+import { Fade } from "react-awesome-reveal";
 import LeftArrow from "@/assets/png//arrow-ltr.png";
 import GetUpdates from "@/assets/png/get-updates.png";
-import ImgTwo from "@/assets/png/parcels/img2.svg";
-import ImgThree from "@/assets/png/parcels/img3.svg";
-import { Fade } from "react-awesome-reveal";
+
+import ImgOne from "@/assets/png/parcels/img1.webp";
+import ImgTwo from "@/assets/png/parcels/img2.webp";
+import ImgThree from "@/assets/png/parcels/img3.webp";
 
 const Hero = () => {
   const { t } = useTranslation();
